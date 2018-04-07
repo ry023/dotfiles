@@ -123,4 +123,5 @@ if dein#check_install()
 endif
 
 " syntax
+colorscheme hybrid
 syntax on
