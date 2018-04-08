@@ -10,7 +10,7 @@ alias reshell='exec -l $SHELL'
 alias gip='curl -s httpbin.org/ip | jq .origin'
 
 # terminal間history共有設定
-PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND" # コマンド実行毎に記録・読み込み
+# PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND" # コマンド実行毎に記録・読み込み
 shopt -u histappend    # セッションを閉じるときにbash_historyを上書きしない
 export HISTSIZE=10000  # 記録される実行コマンドの最大値
 export HISTCONTROL=ignoreboth # 空白、重複履歴を保存しない
