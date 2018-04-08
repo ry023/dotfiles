@@ -1,0 +1,35 @@
+eval "$(hub alias -s)"
+
+# 各種エイリアス設定
+alias ls='ls -G'
+alias ll='ls -l'
+alias la='ls -a'
+alias vi='vim'
+alias mvim='mvim --remote-silent '
+alias reshell='exec -l $SHELL'
+alias gip='curl -s httpbin.org/ip | jq .origin'
+
+# terminal間history共有設定
+PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND" # コマンド実行毎に記録・読み込み
+shopt -u histappend    # セッションを閉じるときにbash_historyを上書きしない
+export HISTSIZE=10000  # 記録される実行コマンドの最大値
+export HISTCONTROL=ignoreboth # 空白、重複履歴を保存しない
+
+# C-r でいい感じに過去コマンド
+peco-history() {
+  CMD="$(history | sort -nr | peco | sed 's/ *[0-9]* *//')"
+  history -s $CMD
+  (osascript -e 'tell application "System Events" to keystroke (ASCII character 30)' &)
+}
+bind -x '"\C-r":peco-history'
+
+function ghql() {
+  local selected_file=$(ghq list --full-path | peco --query "$LBUFFER")
+  if [ -n "$selected_file" ]; then
+    if [ -t 1 ]; then
+      echo ${selected_file}
+      cd ${selected_file}
+    fi
+  fi
+}
+bind -x '"\C-g": ghql'
