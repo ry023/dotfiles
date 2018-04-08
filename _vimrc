@@ -53,7 +53,8 @@ nnoremap <c-l> <c-w>l
 " ===== ファイル形式毎に設定 =======================================
 
 if expand("%:e") == "cs"
-  echo "C# file!"
+  " C#のOmni補完
+  " call dein#add('nosami/Omnisharp', {'build': 'xbuild server/OmniSharp.sln'})
 endif
 
 " ===== ここから dien.vim の設定 =======================================
@@ -93,25 +94,8 @@ nnoremap <silent><c-n> :NERDTreeToggle<CR>
 " doとか打ったらendを自動挿入するプラグイン
 call dein#add('tpope/vim-endwise')
 
-" railsのファイルを便利に開くプラグイン
-call dein#add('tpope/vim-rails')
-
-"" インデントを可視化
-"call dein#add('nathanaelkane/vim-indent-guides')
-"let g:indent_guides_enable_on_vim_startup = 1
-
 " 構文チェック
 call dein#add('scrooloose/syntastic')
-
-" C#のOmni補完
-" serverのbuildもする
-call dein#add('nosami/Omnisharp', {'build': 'xbuild server/OmniSharp.sln'})
-
-call dein#add('kchmck/vim-coffee-script')
-
-" vim-dispatch
-" カラースキームが変になるのでコメントアウト
-call dein#add('tpope/vim-dispatch')
 
 " --------------------------------------------------------------------------
 
