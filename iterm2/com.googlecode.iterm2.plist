@@ -705,17 +705,19 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>335 252 228 325 0 0 1366 745 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>687 141 565 272 0 0 1366 745 </string>
+	<string>355 308 746 184 0 0 1366 745 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>455 337 606 456 0 0 1366 745 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>373 265 620 392 0 0 1366 745 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 126 606 469 0 0 1366 745 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>308 194 796 473 0 0 1366 768 </string>
+	<string>308 146 796 473 0 0 1366 745 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>90 161 592 584 0 0 1366 745 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 260 570 477 0 0 1366 745 </string>
+	<string>0 253 570 477 0 0 1366 745 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>157 4 570 477 0 0 1366 745 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2842,11 +2844,11 @@
 			<key>Name</key>
 			<string>Hybrid</string>
 			<key>Non Ascii Font</key>
-			<string>HiraKakuStdN-W8 12</string>
+			<string>RictyDiscordForPowerline-Regular 12</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Monaco 12</string>
+			<string>RictyDiscordForPowerline-Regular 12</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -3103,7 +3105,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-04-07T09:27:02Z</date>
+	<date>2018-04-09T14:26:30Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>

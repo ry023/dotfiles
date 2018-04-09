@@ -50,6 +50,11 @@ nnoremap <c-j> o<esc>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
+" powerline settings
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
+
 " ===== ファイル形式毎に設定 =======================================
 
 if expand("%:e") == "cs"
@@ -90,12 +95,16 @@ call dein#add('Shougo/neosnippet-snippets')
 call dein#add('scrooloose/nerdtree')
 " c-nでNERDTree開く
 nnoremap <silent><c-n> :NERDTreeToggle<CR>
+let g:NERDTreeWinSize = 25
 
 " doとか打ったらendを自動挿入するプラグイン
 call dein#add('tpope/vim-endwise')
 
 " 構文チェック
 call dein#add('scrooloose/syntastic')
+
+" 構文チェック
+call dein#add('powerline/powerline', {'rtp': 'powerline/bindings/vim/'})
 
 " --------------------------------------------------------------------------
 
