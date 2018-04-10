@@ -704,7 +704,7 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>266 287 796 473 0 0 1440 877 </string>
+	<string>53 303 796 473 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 27 1440 850 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -2451,7 +2451,7 @@
 			<key>Blur</key>
 			<false/>
 			<key>Blur Radius</key>
-			<real>2</real>
+			<real>0.10000000000000001</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -3005,7 +3005,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.077914815989847716</real>
+			<real>0.047398477157360404</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
