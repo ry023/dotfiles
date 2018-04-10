@@ -1,5 +1,3 @@
-eval "$(hub alias -s)"
-
 # 各種エイリアス設定
 alias ls='ls -G'
 alias ll='ls -l'
