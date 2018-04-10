@@ -103,7 +103,7 @@ call dein#add('tpope/vim-endwise')
 " 構文チェック
 call dein#add('scrooloose/syntastic')
 
-" 構文チェック
+" ステータスバーの強化 (要install)
 call dein#add('powerline/powerline', {'rtp': 'powerline/bindings/vim/'})
 
 " --------------------------------------------------------------------------
