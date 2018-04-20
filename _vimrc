@@ -25,6 +25,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set ruler
+set noswapfile
 
 " 起動時のメッセージ消す
 set shortmess+=I
@@ -54,13 +55,6 @@ nnoremap <c-l> <c-w>l
 python3 from powerline.vim import setup as powerline_setup
 python3 powerline_setup()
 python3 del powerline_setup
-
-" ===== ファイル形式毎に設定 =======================================
-
-if expand("%:e") == "cs"
-  " C#のOmni補完
-  " call dein#add('nosami/Omnisharp', {'build': 'xbuild server/OmniSharp.sln'})
-endif
 
 " ===== ここから dien.vim の設定 =======================================
 
@@ -105,6 +99,17 @@ call dein#add('scrooloose/syntastic')
 
 " ステータスバーの強化 (要install)
 call dein#add('powerline/powerline', {'rtp': 'powerline/bindings/vim/'})
+
+" vim-go
+call dein#add('fatih/vim-go')
+
+" ===== ファイル形式毎に設定 =======================================
+
+if expand("%:e") == "cs"
+  " C#のOmni補完
+  " call dein#add('nosami/Omnisharp', {'build': 'xbuild server/OmniSharp.sln'})
+endif
+
 
 " --------------------------------------------------------------------------
 
